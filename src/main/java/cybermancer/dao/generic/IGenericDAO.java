@@ -2,7 +2,7 @@ package cybermancer.dao.generic;
 
 import java.util.List;
 
-public interface GenericDAO<T> {
+public interface IGenericDAO<T> {
 
 	public void save(T t);
 

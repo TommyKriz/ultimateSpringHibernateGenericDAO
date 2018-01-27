@@ -16,8 +16,8 @@ import cybermancer.dto.generic.GenericDTO;
 
 @Repository
 @MappedSuperclass
-public abstract class GenericHibernateDAOImpl<T extends GenericDTO<T>>
-		implements GenericDAO<T> {
+public abstract class GenericDAOImpl<T extends GenericDTO<T>>
+		implements IGenericDAO<T> {
 
 	/**
 	 * With the @PersistenceContext annotation, we are requesting a
@@ -40,7 +40,7 @@ public abstract class GenericHibernateDAOImpl<T extends GenericDTO<T>>
 
 	private Class<T> clazz;
 
-	public GenericHibernateDAOImpl() {
+	public GenericDAOImpl() {
 
 		clazz = ((Class<T>) ((ParameterizedType) getClass()
 				.getGenericSuperclass()).getActualTypeArguments()[0]);

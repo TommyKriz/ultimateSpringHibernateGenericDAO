@@ -10,12 +10,12 @@ import javax.persistence.criteria.Root;
 
 import org.springframework.stereotype.Repository;
 
-import cybermancer.dao.generic.GenericHibernateDAOImpl;
+import cybermancer.dao.generic.GenericDAOImpl;
 import cybermancer.dto.User;
 import cybermancer.dto.User_;
 
 @Repository
-public class UserDao extends GenericHibernateDAOImpl<User> implements IUserDAO {
+public class UserDao extends GenericDAOImpl<User> implements IUserDAO {
 
 	private EntityManager em;
 
