@@ -17,15 +17,6 @@ import cybermancer.config.SpringConfig;
 import cybermancer.dao.UserDao;
 import cybermancer.dto.User;
 
-/**
- * see <a href=
- * "http://www.logicbig.com/tutorials/spring-framework/spring-orm/spring-jpa-transaction/"
- * >http://www.logicbig.com/tutorials/spring-framework/spring-orm/spring-jpa-
- * transaction/</a>
- * 
- * @author Tommy
- *
- */
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = { SpringConfig.class })
 @Transactional
