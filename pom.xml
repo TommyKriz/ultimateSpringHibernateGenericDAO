@@ -57,15 +57,6 @@
 
 
 
-		<!-- for Criteria Builder API, generates the User_.name Annotation files -->
-		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-jpamodelgen -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-jpamodelgen</artifactId>
-			<version>5.2.12.Final</version>
-		</dependency>
-
-
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
