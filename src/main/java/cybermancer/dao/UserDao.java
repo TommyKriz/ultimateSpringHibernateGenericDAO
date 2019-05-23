@@ -12,7 +12,6 @@ import org.springframework.stereotype.Repository;
 
 import cybermancer.dao.generic.GenericDAOImpl;
 import cybermancer.dto.User;
-import cybermancer.dto.User_;
 
 @Repository
 public class UserDao extends GenericDAOImpl<User> implements IUserDAO {
@@ -42,7 +41,7 @@ public class UserDao extends GenericDAOImpl<User> implements IUserDAO {
 		CriteriaQuery<User> criteria = builder.createQuery(User.class);
 		Root<User> root = criteria.from(User.class);
 		criteria.select(root);
-		criteria.where(builder.equal(root.get(User_.name), name));
+		criteria.where(builder.equal(root.<String> get("name"), name));
 
 		List<User> persons = em.createQuery(criteria).getResultList();
 
