@@ -11,6 +11,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<springversion>5.0.3.RELEASE</springversion>
 	</properties>
 
 	<dependencies>
@@ -19,13 +20,13 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>5.0.3.RELEASE</version>
+			<version>${springversion}</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>5.0.3.RELEASE</version>
+			<version>${springversion}</version>
 		</dependency>
 
 
@@ -35,13 +36,13 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
-			<version>5.0.3.RELEASE</version>
+			<version>${springversion}</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
-			<version>5.0.3.RELEASE</version>
+			<version>${springversion}</version>
 		</dependency>
 
 
@@ -76,7 +77,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>5.0.3.RELEASE</version>
+			<version>${springversion}</version>
 			<scope>test</scope>
 		</dependency>
 

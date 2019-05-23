@@ -20,7 +20,7 @@ import cybermancer.dto.User;
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = { SpringConfig.class })
 @Transactional
-public class RealUserDaoTest {
+public class UserDaoTest {
 
 	private static final String PASSWORD_USER_1 = "geheim";
 	private static final String USER_NAME_1 = "Hugo";
